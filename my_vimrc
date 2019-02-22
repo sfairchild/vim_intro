@@ -51,7 +51,6 @@ Plug 'sotte/presenting.vim'
 Plug 'inkarkat/vim-SyntaxRange'
 Plug 'inkarkat/vim-ingo-library'
 Plug 'vim-scripts/SyntaxRange'
-Plug 'godlygeek/tabular'
 
 Plug 'tpope/vim-abolish'
 Plug 'junegunn/vader.vim'
@@ -62,15 +61,15 @@ Plug 'dahu/vim-rng'
 Plug 'ervandew/supertab'
 Plug 'elixir-editors/vim-elixir'
 Plug 'slashmili/alchemist.vim'
-Plug 'zxqfl/tabnine-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'othree/yajs.vim'
 Plug 'mhartington/oceanic-next'
-" Plug 'dracula/vim', { 'as': 'dracula' }
+
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'nanotech/jellybeans.vim'
 
-Plug 'https://github.com/trapd00r/vimpoint'
+" Plug 'https://github.com/trapd00r/vimpoint'
 
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
@@ -80,8 +79,8 @@ Plug 'HerringtonDarkholme/deoplete-typescript'
 Plug 'Quramy/tsuquyomi'
 
 if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
