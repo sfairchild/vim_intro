@@ -1,5 +1,8 @@
 syntax on
 
+set rtp+=./vim/autoload/vim-plug/plug.vim
+source ./vim/autoload/vim-plug/plug.vim
+
 "show line numbers
 " :help 'number'
 set number
@@ -18,6 +21,10 @@ set shiftwidth=2
 " set a color on column #n
 " :help 'colorcolumn'
 set colorcolumn=80
+
+" add mouse support
+" :help 'mouse'
+set mouse=a
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -38,8 +45,12 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vimcommentary'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+Plug 'idanarye/vim-merginal'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'godlygeek/tabular'
 
 call plug#end()
 

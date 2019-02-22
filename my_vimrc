@@ -2,6 +2,10 @@ set encoding=utf-8
 
 set rtp+=/usr/local/opt/fzf
 
+" just updates path for presentation
+set rtp+=./vim/autoload/vim-plug/plug.vim
+source ./vim/autoload/vim-plug/plug.vim
+
 set t_Co=256
 set number
 set relativenumber
@@ -47,7 +51,7 @@ Plug 'sotte/presenting.vim'
 Plug 'inkarkat/vim-SyntaxRange'
 Plug 'inkarkat/vim-ingo-library'
 Plug 'vim-scripts/SyntaxRange'
-" Plug 'tpope/vim-markdown'
+Plug 'godlygeek/tabular'
 
 Plug 'tpope/vim-abolish'
 Plug 'junegunn/vader.vim'
