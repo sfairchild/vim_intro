@@ -216,30 +216,30 @@ vim -u NONE
   :help write-quit
   ```
 
-| | |
-| --- | --- |
-| `:q` `:quit` | quit |
-| `:q!` `quit!` | force quit |
-| `:qa` `:quitall` | quit and close all open buffers |
-| `:wq` | write file and quit |
-| `:wq!` | write and quit, if file does not have a name fail and quit |
-| `:x` `:exit` | write file only if file has been changes and quit |
-| `:xa` `:xall` | same as `:x` but run on all open buffers |
-| `:xa!` `:xall!` | same as `:xa` but exit even on errors |
-| `:cq` `:cquit` | quit and return a none 0, helpful on git commit |
+|                  |                                                            |
+| ---------------- | ---                                                        |
+| `:q` `:quit`     | quit                                                       |
+| `:q!` `quit!`    | force quit                                                 |
+| `:qa` `:quitall` | quit and close all open buffers                            |
+| `:wq`            | write file and quit                                        |
+| `:wq!`           | write and quit, if file does not have a name fail and quit |
+| `:x` `:exit`     | write file only if file has been changes and quit          |
+| `:xa` `:xall`    | same as `:x` but run on all open buffers                   |
+| `:xa!` `:xall!`  | same as `:xa` but exit even on errors                      |
+| `:cq` `:cquit`   | quit and return a none 0, helpful on git commit            |
 
 ## Command Mode
 
 ### Other common commands
 
-| | |
-| --- | --- |
-| `:w` | write to file |
-| `:e {file}` | open file |
-| `:ls` | list open buffers |
-| `:b{buffer}` | open buffer |
+|               |                    |
+| ---           | ---                |
+| `:w`          | write to file      |
+| `:e {file}`   | open file          |
+| `:ls`         | list open buffers  |
+| `:b{buffer}`  | open buffer        |
 | `:!{command}` | run system command |
-| `:reg` | view registers |
+| `:reg`        | view registers     |
 
 ## Movements
 ```
@@ -248,12 +248,12 @@ vim -u NONE
 
 ### Single Character
 
-| | |
-|---|---: |
-| h | left |
-| j | down |
-| k | up |
-| l | right |
+|     |       |
+| --- | ---:  |
+| h   | left  |
+| j   | down  |
+| k   | up    |
+| l   | right |
 
 ## Movements
 ```
@@ -271,19 +271,19 @@ space.  An empty line is also considered to be a WORD.
 
 http://google.com = 5 words or 1 WORD
 
-| | |
-| --- | ---: |
-| w | forward to next word |
-| W | forward to next WORD |
-| e | forward to end of word |
-| E | forward to end of WORD |
+|     |                        |
+| --- | ---:                   |
+| w   | forward to next word   |
+| W   | forward to next WORD   |
+| e   | forward to end of word |
+| E   | forward to end of WORD |
 
-| | |
-| --- | ---: |
-| b | backwards to previous word |
-| B | backwards to previous WORD |
-| ge | backwards to previous end of word |
-| gE | backwards to previous end of WORD |
+|     |                                   |
+| --- | ---:                              |
+| b   | backwards to previous word        |
+| B   | backwards to previous WORD        |
+| ge  | backwards to previous end of word |
+| gE  | backwards to previous end of WORD |
 
 ## Movements
 ```
@@ -294,14 +294,14 @@ http://google.com = 5 words or 1 WORD
 
 Works only on current line
 
-| | |
-|---|---: |
-| f{char} | forward to {char} |
-| F{char} | backwards to {char} |
-| t{char} | forward until {char} |
-| T{char} | backwards until {char} |
-| ; | repeat last find command is same direction |
-| , | repeat last find command is opposite direction |
+|         |                                                |
+| ---     | ---:                                           |
+| f{char} | forward to {char}                              |
+| F{char} | backwards to {char}                            |
+| t{char} | forward until {char}                           |
+| T{char} | backwards until {char}                         |
+| ;       | repeat last find command is same direction     |
+| ,       | repeat last find command is opposite direction |
 
 ## Movements
 ```
@@ -312,14 +312,14 @@ Works only on current line
 
 Works on whole file
 
-| | |
-|---|---: |
-| /{word} | search forwards for word |
-| ?{word} | search backwards for word |
-| * | search forwards for word under cursor |
-| # | search backwards for word under cursor |
-| n | continue search in same direction |
-| N | continue search in opposite direction |
+|         |                                        |
+| ---     | ---:                                   |
+| /{word} | search forwards for word               |
+| ?{word} | search backwards for word              |
+| *       | search forwards for word under cursor  |
+| #       | search backwards for word under cursor |
+| n       | continue search in same direction      |
+| N       | continue search in opposite direction  |
 
 ## Movements
 ```
@@ -328,19 +328,19 @@ Works on whole file
 
 ### Navigating a file
 
-| | |
-|---|---: |
-| {n}G | Goto to line number {n} |
-| gg | Goto to first line of file |
-| G | Goto to end of file |
-| <C-d> | jump down half a page |
-| <C-u> | jump up half a page |
+|       |                                       |
+| ---   | ---:                                  |
+| {n}G  | Goto to line number {n}               |
+| gg    | Goto to first line of file            |
+| G     | Goto to end of file                   |
+| <C-d> | jump down half a page                 |
+| <C-u> | jump up half a page                   |
 | <C-f> | scroll page down(forward) 1 full page |
-| <C-b> | scroll page up(back) 1 full page |
-| zz | center buffer on current position |
-| H | move cursor to top of screen |
-| M | move cursor to middle of screen |
-| L | move cursor to bottom of screen |
+| <C-b> | scroll page up(back) 1 full page      |
+| zz    | center buffer on current position     |
+| H     | move cursor to top of screen          |
+| M     | move cursor to middle of screen       |
+| L     | move cursor to bottom of screen       |
 
 ## Movements
 ```
@@ -349,27 +349,27 @@ Works on whole file
 
 <!-- &#124; is a | operator -->
 
-| | |
-|---|---: |
-| 0 | to column 0 |
-| ^ | to first non-blank char |
-| $ | to end of line |
-| {n}&#124; | to column number {n} |
-| % | to matching bracket |
+|           |                         |
+| ---       | ---:                    |
+| 0         | to column 0             |
+| ^         | to first non-blank char |
+| $         | to end of line          |
+| {n}&#124; | to column number {n}    |
+| %         | to matching bracket     |
 
 ## Insert Mode
 ```
 :help inserting
 ```
 
-| | |
-|--- | --- |
-| i | insert before current position |
-| a | append after current position |
-| I | insert before first non-blank character on current line |
-| A | append after last blank character on current line |
-| o | insert line after current position and enter insert mode |
-| O | insert line before current position and enter insert mode |
+|     |                                                           |
+| --- | ---                                                       |
+| i   | insert before current position                            |
+| a   | append after current position                             |
+| I   | insert before first non-blank character on current line   |
+| A   | append after last blank character on current line         |
+| o   | insert line after current position and enter insert mode  |
+| O   | insert line before current position and enter insert mode |
 
 Always use ESC or <C-[> to return to normal mode
 
@@ -378,26 +378,26 @@ Always use ESC or <C-[> to return to normal mode
 :help change.txt
 ```
 
-| | |
-| --- | --- |
-| x | delete character |
-| r | replace character |
-| ~ | toggle case |
+|     |                   |
+| --- | ---               |
+| x   | delete character  |
+| r   | replace character |
+| ~   | toggle case       |
 
 ## Operators
 ```
 :help operator
 ```
 
-| | |
-|--- | --- |
-| y | yank(copy) text |
-| d | delete text |
-| c | change text |
-| < | un-indent text |
-| > | indent text |
-| gu | make text lowercase |
-| gU | make text uppercase |
+|     |                     |
+| --- | ---                 |
+| y   | yank(copy) text     |
+| d   | delete text         |
+| c   | change text         |
+| <   | un-indent text      |
+| >   | indent text         |
+| gu  | make text lowercase |
+| gU  | make text uppercase |
 
 ## The dot operator
 ```
@@ -447,10 +447,10 @@ yaw -> Yank contents around current word including trailing whitespace
 
 ## Undo/Redo
 
-| | |
-|--- | --- |
-|u | undo |
-|<C-r> | redo |
+|       |      |
+| ---   | ---  |
+| u     | undo |
+| <C-r> | redo |
 
 # "Advanced" Vim
 
@@ -469,12 +469,12 @@ mg -> set mark named g to current position
 
 automatic marks
 
-| | |
-| --- | --- |
-| ` | the cursor position before the last jump |
-| [ | the first character of the last yanked or changed text |
-| ] | the last character of the last yanked or changed text |
-| . | the position where the last change was made |
+|     |                                                        |
+| --- | ---                                                    |
+| `   | the cursor position before the last jump               |
+| [   | the first character of the last yanked or changed text |
+| ]   | the last character of the last yanked or changed text  |
+| .   | the position where the last change was made            |
 
 ## Vim Registers
 ```
@@ -497,15 +497,15 @@ To specify a register prepend with `"`
 ```
 common unnamed registers are
 
-| | |
-|--- | --- |
-|"| text from the most recent d, c, s, x or y command|
-|+| the system clipboard register, is configured |
-|0| the text from the most recent yank command not stored in another register |
-|1-9| contains the text from the most recent delete or change command |
-|_| the black hole register used to preserve numbered registers |
-|/| the last search register |
-|:| the last ex command ran |
+|     |                                                                           |
+| --- | ---                                                                       |
+| "   | text from the most recent d, c, s, x or y command                         |
+| +   | the system clipboard register, is configured                              |
+| 0   | the text from the most recent yank command not stored in another register |
+| 1-9 | contains the text from the most recent delete or change command           |
+| _   | the black hole register used to preserve numbered registers               |
+| /   | the last search register                                                  |
+| :   | the last ex command ran                                                   |
 
 
 ## Marcos
