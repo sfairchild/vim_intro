@@ -83,7 +83,7 @@ patat:
 
 ![](resources/LSI-ADM3A-full-keyboard.jpg)
 
-# Why VIM
+## Why VIM
 
 ## Pros
 * Fast and Lightweight
@@ -93,6 +93,7 @@ patat:
 * Portable
 * Fun
 
+. . .
 ## Cons
 * Steep learning curve
 * Default configurations sucks
