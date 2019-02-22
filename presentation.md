@@ -162,6 +162,30 @@ Opens a quick self guided tour of basic vim commands
 
 ![](resources/vim-cheat-sheet.gif)
 
+# Customizing VIM
+
+## .vimrc
+```
+:help vimrc
+```
+
+Normally located at ~/.vimrc for vim or ~/.config/nvim/init.vim for neovim
+
+To load a different vimrc start vim with the -u flag passing it the file you would like to load
+```
+vim -u vimrc
+```
+or
+```
+vim -u NONE
+```
+
+## plugin managers
+
+[vim-plug](https://github.com/junegunn/vim-plug)
+[pathogen](https://github.com/tpope/vim-pathogen)
+[vundle](https://github.com/VundleVim/Vundle.vim)
+
 # Basic VIM
 
 ## Movements
@@ -441,15 +465,6 @@ q{char} starts recording into registar {char}
 press q again to stop recording
 
 macros are stored in the registars
-
-# Customizing VIM
-
-## .vimrc
-
-```
-set number
-set syntax
-```
 
 # Conclusion
 
