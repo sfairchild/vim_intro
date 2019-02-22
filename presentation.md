@@ -9,6 +9,7 @@ patat:
   theme:
     header: [bold, vividCyan]
     bulletList: [dullCyan]
+    emph: [dullWhite, italic]
   margins:
     left: 5
     right: 5
@@ -86,7 +87,7 @@ patat:
 
 ## Pros
 * Fast and Lightweight
-* More productive with less typing
+* More productivity with less typing
 * Customizable
 * Free
 * Portable
@@ -94,20 +95,20 @@ patat:
 
 ## Cons
 * Steep learning curve
-* Default configurations suck
-* Doesn't have a "modern" look and feel
+* Default configurations sucks
+* Doesn't have a _"modern"_ look and feel
 * System clipboard support is not always easy
 
 # Vim Philosophy
 
 ## Vim is a Modal editor
 
-| mode    | commands  |
-| ---     | ---:      |
-| normal  | <ESC>     |
-| insert  |  i I a A  |
-| command | :         |
-| visual  | v V <C-v> |
+| mode    | commands     |
+| ---     | ---:         |
+| normal  | <ESC> <C-[>  |
+| insert  |  i I a A o O |
+| command | :            |
+| visual  | v V <C-v>    |
 
 
 ## Vim Grammar
@@ -186,7 +187,7 @@ Opens a quick self guided tour of basic vim commands
 
 A word consists of a sequence of letters, digits and underscores, or a
 sequence of other non-blank characters, separated with white space (spaces,
-tabs, <EOL>). 
+tabs, <EOL>).
 
 A WORD consists of a sequence of non-blank characters, separated with white
 space.  An empty line is also considered to be a WORD.
