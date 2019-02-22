@@ -189,6 +189,58 @@ vim -u NONE
 
 # Basic VIM
 
+## Command Mode
+
+### Exiting VIM
+
+## stack overflow
+
+![](resources/stackOverflowExitVim.png)
+
+## exit vim meme
+
+![](resources/meme.jpeg)
+
+## exit tweet
+
+![](resources/exitVimTweet.png)
+
+## exit book
+
+![](resources/exitVimBook.jpeg)
+
+## Command Mode
+
+### Exiting VIM
+  ```
+  :help write-quit
+  ```
+
+| | |
+| --- | --- |
+| `:q` `:quit` | quit |
+| `:q!` `quit!` | force quit |
+| `:qa` `:quitall` | quit and close all open buffers |
+| `:wq` | write file and quit |
+| `:wq!` | write and quit, if file does not have a name fail and quit |
+| `:x` `:exit` | write file only if file has been changes and quit |
+| `:xa` `:xall` | same as `:x` but run on all open buffers |
+| `:xa!` `:xall!` | same as `:xa` but exit even on errors |
+| `:cq` `:cquit` | quit and return a none 0, helpful on git commit |
+
+## Command Mode
+
+### Other common commands
+
+| | |
+| --- | --- |
+| `:w` | write to file |
+| `:e {file}` | open file |
+| `:ls` | list open buffers |
+| `:b{buffer}` | open buffer |
+| `:!{command}` | run system command |
+| `:reg` | view registers |
+
 ## Movements
 ```
 :help motion.txt
