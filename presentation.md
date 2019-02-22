@@ -183,9 +183,9 @@ vim -u NONE
 
 ## plugin managers
 
-[vim-plug](https://github.com/junegunn/vim-plug)
-[pathogen](https://github.com/tpope/vim-pathogen)
-[vundle](https://github.com/VundleVim/Vundle.vim)
+* [vim-plug](https://github.com/junegunn/vim-plug)
+* [pathogen](https://github.com/tpope/vim-pathogen)
+* [vundle](https://github.com/VundleVim/Vundle.vim)
 
 # Basic VIM
 
