@@ -63,16 +63,16 @@ patat:
 |     |_Bill Joy
 |     |_Distributed with BSD Unix Version 1.1
 |
-|--ex/vi
-|     |_"extended ed"
-|     |_1978
-|     |_UC Berkeley
-|     |_Bill Joy
-|     |_Distributed with BSD Unix Version 1.1
-|
 |--vim
 |     |_"Vi Imitation" later "Vi Improved"
 |     |_1988
+|     |_Bram Moolenaar
+|
+|--neovim
+|     |_2014
+|
+|--vim 8
+|     |_2016
 ```
 
 
