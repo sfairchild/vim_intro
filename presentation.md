@@ -10,6 +10,7 @@ patat:
     header: [bold, vividCyan]
     bulletList: [dullCyan]
     emph: [dullWhite, italic]
+    codeBlock: [onDullBlack]
   margins:
     left: 5
     right: 5
