@@ -39,10 +39,96 @@ patat:
 * A brief history of VIM
 * Why VIM
 * Understanding the philosophy
+* How to make VIM your own
 * Basic VIM
 * Touch on more advanced topics
-* How to make VIM your own
 * Q & A... If time permits
+
+## Why this talk
+
+### Exiting VIM
+
+## stack overflow
+
+![](resources/stackOverflowExitVim.png)
+
+## exit vim meme
+
+![](resources/meme.jpeg)
+
+## exit tweet
+
+![](resources/exitVimTweet.png)
+
+## exit book
+
+![](resources/exitVimBook.jpeg)
+
+## Command Mode
+
+### Exiting VIM
+
+```
+  :help write-quit
+```
+
+      |                  |                                                            |
+      | ---------------- | ---                                                        |
+      | `:q` `:quit`     | quit                                                       |
+      | `:q!` `quit!`    | force quit                                                 |
+      | `:qa` `:quitall` | quit and close all open buffers                            |
+      | `:wq`            | write file and quit                                        |
+      | `:wq!`           | write and quit, if file does not have a name fail and quit |
+      | `:x` `:exit`     | write file only if file has been changes and quit          |
+      | `:xa` `:xall`    | same as `:x` but run on all open buffers                   |
+      | `:xa!` `:xall!`  | same as `:xa` but exit even on errors                      |
+      | `:cq` `:cquit`   | quit and return a none 0, helpful on git commit            |
+
+
+## A brief history of VIM
+
+```
+|--QED
+|     |_1965-1966
+|     |_UC Berkeley
+|
+|--ed
+|     |_1969
+|     |_Bell Labs
+|     |_Ken Thompson and Dennis Ritchie
+|
+|--em
+|     |_"editor for mortals"
+|     |_1975
+|     |_Queen Mary’s College, London
+|     |_George Coulouris
+|
+|--ex/vi
+|     |_"extended ed"
+|     |_1978
+|     |_UC Berkeley
+|     |_Bill Joy
+|     |_Distributed with BSD Unix Version 1.1
+|
+|--vim
+|     |_"Vi Imitation" later "Vi Improved"
+|     |_1988
+|     |_Bram Moolenaar
+|
+|--neovim
+|     |_2014
+|
+|--vim 8
+      |_2016
+```
+
+<!-- comment -->
+
+[Where Vim Came From]<https://twobithistory.org/2018/08/05/where-vim-came-from.html>
+
+## Ken Thompson and Dennis Ritchie
+
+![](resources/Ken_Thompson_and_Dennis_Ritchie_at_PDP-11.jpg)
 
 ## A brief history of VIM
 
@@ -122,17 +208,23 @@ patat:
 | command | :            |
 | visual  | v V <C-v>    |
 
+. . .
+
+> “Indeed, the ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code. ...[Therefore,] making it easy to read makes it easier to write.”
+
+― Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship
+
 
 ## Vim Grammar
 
-{modifier}(operator)[motion/text-object]
+(operator)[motion/text-object]
 
 . . .
 
 ```
-3dw
+dw
 ```
-delete 3 words
+delete word
 
 . . .
 ```
@@ -145,6 +237,13 @@ re-indent lines from current position to end of file
 ## Vim help & Built in resources
 
 ```
+$ vimtutor
+```
+
+Opens a quick self guided tour of basic vim commands
+
+. . .
+```
 :help {topic}
 ```
 
@@ -153,18 +252,16 @@ re-indent lines from current position to end of file
  ``
  ``
 
-Opens a quick self guided tour of basic vim commands
-
-`$ vimtutor`
 
 ## Additional Resources
 
+* Awesome Vim - https://github.com/akrawchyk/awesome-vim
 * Seven habits of effective text editing - https://www.moolenaar.net/habits_2007.pdf
 * video tutorials - http://vimcasts.org/
 * Vim Galore - https://github.com/mhinz/vim-galore
-* Awesome Vim - https://github.com/akrawchyk/awesome-vim
+* Awesome Vim(plugin explorer) https://vimawesome.com
 * Vim Adventures(paid after first level) - https://vim-adventures.com/
-* youtube - https://youtube.com
+* Practical Vim Book
 
 ## Cheat sheet 1
 
@@ -172,11 +269,11 @@ Opens a quick self guided tour of basic vim commands
 
 ## Cheat sheet 2
 
-![](cheat-sheets/vim-cheatsheet.png)
+![](cheat-sheets/vim-cheatsheet.gif)
 
 ## beautiful cheat sheet
 
-![](cheat-sheets/beautiful-vim-cheatsheet.gif)
+![](cheat-sheets/beautiful-vim-cheatsheet.png)
 
 # Customizing VIM
 
@@ -185,7 +282,12 @@ Opens a quick self guided tour of basic vim commands
 :help vimrc
 ```
 
-Normally located at ~/.vimrc for vim or ~/.config/nvim/init.vim for neovim
+Normally located at
+macOS/Linux
+~/.vimrc for vim or ~/.config/nvim/init.vim for neovim
+
+windows
+$HOME/\_vimrc
 
 To load a different vimrc start vim with the -u flag passing it the file you would like to load
 ```
