@@ -314,4 +314,4 @@ vim -u NONE
 
 # Conclusion
 
-# FAQ
+# Q&A
