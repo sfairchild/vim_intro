@@ -20,6 +20,10 @@ patat:
 ...
 
 
+## VIM is weird
+
+![](resources/vimIsWeird.png)
+
 ## xkcd
 
 ![](resources/xkcd_real_programmers.png)
@@ -74,9 +78,10 @@ patat:
 |     |_2014
 |
 |--vim 8
-|     |_2016
+      |_2016
 ```
 
+<!-- comment -->
 
 [Where Vim Came From]<https://twobithistory.org/2018/08/05/where-vim-came-from.html>
 
@@ -84,7 +89,7 @@ patat:
 
 ![](resources/LSI-ADM3A-full-keyboard.jpg)
 
-## Why VIM
+# Why VIM
 
 ## Pros
 * Fast and Lightweight
@@ -94,7 +99,12 @@ patat:
 * Portable
 * Fun
 
-. . .
+<!-- fast and lightweight/more productive: was designed to work on a slow connection with the least amount of inputs -->
+<!-- Customizable: can make it as close to an ide as you would like. Any key can be mapped and can be styled in anyway you like -->
+<!-- free: charityware. Supports children in Uganda -->
+<!-- portable: available on every os even android and ios(not very practical on mobile). Key binding on other app like browsers because of vimium  -->
+<!-- fun: vim golf - try to preform action in fewest commands possible -->
+
 ## Cons
 * Steep learning curve
 * Default configurations sucks
@@ -158,11 +168,15 @@ Opens a quick self guided tour of basic vim commands
 
 ## Cheat sheet 1
 
-![](resources/vimMovements.png)
+![](cheat-sheets/vim-movements.png)
 
 ## Cheat sheet 2
 
-![](resources/vim-cheat-sheet.gif)
+![](cheat-sheets/vim-cheatsheet.png)
+
+## beautiful cheat sheet
+
+![](cheat-sheets/beautiful-vim-cheatsheet.gif)
 
 # Customizing VIM
 
