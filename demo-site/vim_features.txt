@@ -3,6 +3,7 @@
 
 Vim ("Vi IMproved") is a "vi clone", ie
 a program similar to the text editor "vi".
+Welcome to ED
 
 Vim works in textmode in every terminal,
 but it also has a graphic user interface,
