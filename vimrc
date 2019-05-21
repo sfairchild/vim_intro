@@ -1,3 +1,4 @@
+set nocompatible
 syntax on
 
 " set rtp+=./vim/autoload/vim-plug/plug.vim

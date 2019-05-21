@@ -1,5 +1,6 @@
 ---
 title: Getting Started with Vim
+author: https://github.com/sfairchild/vim_intro
 patat:
   wrap: true
   slideLevel: 2
@@ -56,13 +57,13 @@ patat:
 
 ![](resources/stackOverflowExitVim.png)
 
-## exit vim meme
-
-![](resources/meme.jpeg)
-
 ## exit tweet
 
 ![](resources/exitVimTweet.png)
+
+## exit vim meme
+
+![](resources/meme.jpeg)
 
 ## exit book
 
@@ -77,17 +78,17 @@ patat:
   :help write-quit
 ```
 
-|                  |                                                            |
-| ---------------- | ---                                                        |
-| `:q` `:quit`     | quit                                                       |
-| `:q!` `quit!`    | force quit                                                 |
-| `:qa` `:quitall` | quit and close all open buffers                            |
-| `:wq`            | write file and quit                                        |
-| `:wq!`           | write and quit, if file does not have a name fail and quit |
-| `:x` `:exit`     | write file only if file has been changes and quit          |
-| `:xa` `:xall`    | same as `:x` but run on all open buffers                   |
-| `:xa!` `:xall!`  | same as `:xa` but exit even on errors                      |
-| `:cq` `:cquit`   | quit and return a none 0, helpful on git commit            |
+|                    |                                                            |
+| ----------------   | ---                                                        |
+| `:q` `:quit`       | quit                                                       |
+| `:q!` `quit!` `ZQ` | force quit                                                 |
+| `:wq`  `ZZ`        | write file and quit                                        |
+| `:wq!`             | write and quit, if file does not have a name fail and quit |
+| `:x` `:exit`       | write file only if file has been changes and quit          |
+| `:qa` `:quitall`   | quit and close all open buffers                            |
+| `:xa` `:xall`      | same as `:x` but run on all open buffers                   |
+| `:xa!` `:xall!`    | same as `:xa` but exit even on errors                      |
+| `:cq` `:cquit`     | quit and return a none 0, helpful on git commit            |
 
 
 ## A brief history of VIM
@@ -261,13 +262,12 @@ Opens a quick self guided tour of basic vim commands
 
 ### Additional Resources
 
-* Awesome Vim - https://github.com/akrawchyk/awesome-vim
+* video tutorials - http://vimcasts.org
+* Practical Vim Book - https://pragprog.com/book/dnvim2/practical-vim-second-edition
+* Vim Adventures(paid after first level) - https://vim-adventures.com
 * Seven habits of effective text editing - https://www.moolenaar.net/habits_2007.pdf
-* video tutorials - http://vimcasts.org/
+* Awesome Vim - https://github.com/akrawchyk/awesome-vim
 * Vim Galore - https://github.com/mhinz/vim-galore
-* Awesome Vim(plugin explorer) https://vimawesome.com
-* Vim Adventures(paid after first level) - https://vim-adventures.com/
-* Practical Vim Book
 
 ## Cheat sheet 1
 
@@ -309,6 +309,8 @@ vim -u NONE
 * [vim-plug](https://github.com/junegunn/vim-plug)
 * [pathogen](https://github.com/tpope/vim-pathogen)
 * [vundle](https://github.com/VundleVim/Vundle.vim)
+
+Awesome Vim(plugin explorer) https://vimawesome.com
 
 # Basic VIM
 
